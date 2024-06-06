@@ -7,11 +7,7 @@ body {
 
 /* Estilos para o elemento `header` (cabeçalho) */
 #cabecalho {
-  display: flex; /* Arrange elements horizontally */
-  justify-content: space-between; /* Distribute elements evenly */
-  align-items: center; /* Align elements vertically in the center */
-  padding: 1rem; /* Add some padding */
-  background-color: rgb(218, 37, 28); /* Set background color to red */
+
 }
 
 /* Estilos para os logos */
