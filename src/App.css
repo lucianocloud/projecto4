@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+Estilos gerais para o aplicativo
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Define uma família de fonte padrão */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para o elemento `header` (cabeçalho) */
+#cabecalho {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center; /* Align elements vertically in the center */
+  padding: 1rem; /* Add some padding */
+  background-color: rgb(218, 37, 28); /* Set background color to red */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Estilos para os logos */
+#logov,
+#logoa {
+  width: 150px; /* Define uma largura fixa para ambos os logos */
+  height: auto; /* Mantém a proporção de aspecto */
+  object-fit: cover; /* Garante que os logos preencham o espaço enquanto preservam a proporção do aspecto */
+}
+
+/* Estilos para o elemento `menu` (menu) */
+#menu {
+  list-style: none; /* Remove pontos de bala padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  margin: 0; /* Remove margem padrão */
+}
+
+#menu li {
+  display: inline-block; /* Exibe itens da lista em linha */
+  margin-right: 1rem; /* Adiciona uma margem à direita entre os itens da lista */
+}
+
+/* Estilos para os links do menu */
+#menu li a { /*  Supondo que você deseja links nos itens do menu */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #ffffff; /* Define a cor do texto como branco */
+
+  /* Estilos para o efeito hover */
+  :hover {
+    color: rgb(255, 255, 255); /* Muda a cor do texto para branco ao passar o mouse */
   }
 }
 
-.App-header {
-  background-color: #da1c1c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Estilo para o link "Home" */
+#menu li:nth-child(1) a {
+  color: white; /* Define a cor do texto como branco para o item "Home" */
 }
 
-.App-link {
-  color: #61fba6;
+/* Estilo para o link "Produtos" */
+#menu li:nth-child(2) a {
+  color: white; /* Define a cor do texto como branco para o item "Produtos" */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para o link "Sobre" */
+#menu li:nth-child(3) a {
+  color: white; /* Define a cor do texto como branco para o item "Sobre" */
 }
+
