@@ -1,4 +1,4 @@
-Estilos gerais para o aplicativo
+/* Estilos gerais para o aplicativo */
 body {
   margin: 0;
   padding: 0;
@@ -17,8 +17,8 @@ body {
 /* Estilos para os logos */
 #logov,
 #logoa {
-  width: 150px; /* Define uma largura fixa para ambos os logos */
-  height: auto; /* Mantém a proporção de aspecto */
+  width: 200px; /* Define uma largura fixa para ambos os logos */
+  height: 100px; /* Mantém a proporção de aspecto */
   object-fit: cover; /* Garante que os logos preencham o espaço enquanto preservam a proporção do aspecto */
 }
 
@@ -27,21 +27,30 @@ body {
   list-style: none; /* Remove pontos de bala padrão */
   padding: 0; /* Remove preenchimento padrão */
   margin: 0; /* Remove margem padrão */
+  color: #ffffff;
 }
 
 #menu li {
   display: inline-block; /* Exibe itens da lista em linha */
   margin-right: 1rem; /* Adiciona uma margem à direita entre os itens da lista */
-}
-
-/* Estilos para os links do menu */
-#menu li a { /*  Supondo que você deseja links nos itens do menu */
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: #ffffff; /* Define a cor do texto como branco */
 
   /* Estilos para o efeito hover */
   :hover {
-    color: rgb(255, 255, 255); /* Muda a cor do texto para branco ao passar o mouse */
+    background-color: red; /* Muda a cor do fundo para vermelho ao passar o mouse */
+  }
+}
+
+
+/* Estilos para os links do menu */
+#menu li a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #ffffff; /* Define a cor do texto como branco */
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your chosen font name */
+  font-size: 1.7em; /* Increase font size to 1.2em */
+
+  /* Estilos para o efeito hover */
+  :hover {
+    color: rgb(255, 255, 255); /* Muda a cor do texto para preto ao passar o mouse */
   }
 }
 
@@ -60,3 +69,15 @@ body {
   color: white; /* Define a cor do texto como branco para o item "Sobre" */
 }
 
+/* Estilos para o h1 (cabeçalho principal) */
+h1 {
+  text-align: center; /* Centraliza o texto do h1 */
+  font-size: 2rem; /* Aumenta o tamanho da fonte do h1 */
+  color: #ffffff; /* Define a cor do texto do h1 como branco */
+  margin-bottom: 1rem; /* Adiciona uma margem inferior ao h1 */
+
+  /* Estilo para o efeito hover do h1 */
+  :hover {
+    color: rgb(255, 255, 255); /* Muda a cor do texto do h1 para preto ao passar o mouse */
+  }
+}
